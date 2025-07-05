@@ -40,7 +40,15 @@ const [fetchData, { data, loading, error }] = useAsync(fetchUserData);
 
 ## Documentation
 
-📖 **[Full Documentation](./docs/README.md)** - Complete API reference, examples, and best practices for all hooks.
+📖 **[Full Documentation](https://github.com/AikeNyanLynnOo/usely/blob/main/docs/README.md)** - Complete API reference, examples, and best practices for all hooks.
+
+Each hook has its own detailed documentation page:
+- [useLocalStorage](https://github.com/AikeNyanLynnOo/usely/blob/main/docs/useLocalStorage.md)
+- [useClickOutside](https://github.com/AikeNyanLynnOo/usely/blob/main/docs/useClickOutside.md)
+- [useAsync](https://github.com/AikeNyanLynnOo/usely/blob/main/docs/useAsync.md)
+- [useDebounceValue](https://github.com/AikeNyanLynnOo/usely/blob/main/docs/useDebounceValue.md)
+- [useDebounceCallback](https://github.com/AikeNyanLynnOo/usely/blob/main/docs/useDebounceCallback.md)
+- [useEventListenerRef](https://github.com/AikeNyanLynnOo/usely/blob/main/docs/useEventListenerRef.md)
 
 ## Features
 
