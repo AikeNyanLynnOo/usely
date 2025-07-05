@@ -1,4 +1,4 @@
-import { useEffect, useRef, RefCallback } from 'react';
+import { useEffect, useRef, useState, RefCallback } from 'react';
 
 /**
  * useEventListenerRef
@@ -16,30 +16,30 @@ function useEventListenerRef<T extends HTMLElement>(
   options?: boolean | AddEventListenerOptions
 ): RefCallback<T> {
   const savedHandler = useRef<typeof handler>(handler);
-  const elementRef = useRef<T | null>(null);
+  const [node, setNode] = useState<T | null>(null);
 
-  // Update ref if handler changes
+  // Update the handler ref if handler changes
   useEffect(() => {
     savedHandler.current = handler;
   }, [handler]);
 
+  // Attach/detach the event listener when node, eventName, or options change
   useEffect(() => {
-    const element = elementRef.current;
-    if (!element) return;
+    if (!node) return;
     const eventListener = (event: Event) => {
       if (savedHandler.current) {
         savedHandler.current(event as any);
       }
     };
-    element.addEventListener(eventName, eventListener, options);
+    node.addEventListener(eventName, eventListener, options);
     return () => {
-      element.removeEventListener(eventName, eventListener, options);
+      node.removeEventListener(eventName, eventListener, options);
     };
-  }, [eventName, options]);
+  }, [node, eventName, options]);
 
-  // Ref callback to assign the element
-  const refCallback: RefCallback<T> = (node) => {
-    elementRef.current = node;
+  // Ref callback to assign the element and trigger effect
+  const refCallback: RefCallback<T> = (el) => {
+    setNode(el);
   };
 
   return refCallback;
