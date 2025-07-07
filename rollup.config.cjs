@@ -17,6 +17,20 @@ module.exports = {
       sourcemap: true,
     },
   ],
-  plugins: [resolve(), commonjs(), typescript({ tsconfig: "./tsconfig.json" })],
+  plugins: [
+    resolve(),
+    commonjs(),
+    typescript({
+      tsconfig: "./tsconfig.json",
+      // Exclude test files from the build
+      tsconfigOverride: {
+        exclude: [
+          "src/hooks/tests/**",
+          "**/*.test.ts",
+          "**/*.test.tsx"
+        ]
+      }
+    })
+  ],
   external: ["react", "react-dom"],
 };
