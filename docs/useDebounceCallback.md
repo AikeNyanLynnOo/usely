@@ -5,13 +5,13 @@ A hook that creates a debounced version of a callback function. The debounced fu
 ## Installation
 
 ```bash
-npm install useful-hooks
+npm install usely
 ```
 
 ## Usage
 
 ```tsx
-import { useDebounceCallback } from 'useful-hooks';
+import { useDebounceCallback } from 'usely';
 
 const debouncedCallback = useDebounceCallback(callback, delay);
 ```
@@ -32,7 +32,7 @@ const debouncedCallback = useDebounceCallback(callback, delay);
 ### Search Input with Debounced API Call
 
 ```tsx
-import { useDebounceCallback } from 'useful-hooks';
+import { useDebounceCallback } from 'usely';
 import { useState } from 'react';
 
 function SearchComponent() {
@@ -76,7 +76,7 @@ function SearchComponent() {
 ### Window Resize Handler
 
 ```tsx
-import { useDebounceCallback } from 'useful-hooks';
+import { useDebounceCallback } from 'usely';
 import { useState, useEffect } from 'react';
 
 function ResponsiveComponent() {
@@ -108,7 +108,7 @@ function ResponsiveComponent() {
 ### Form Submission with Validation
 
 ```tsx
-import { useDebounceCallback } from 'useful-hooks';
+import { useDebounceCallback } from 'usely';
 import { useState } from 'react';
 
 function FormComponent() {
@@ -154,7 +154,7 @@ function FormComponent() {
 ### Scroll Event Handler
 
 ```tsx
-import { useDebounceCallback } from 'useful-hooks';
+import { useDebounceCallback } from 'usely';
 import { useEffect } from 'react';
 
 function ScrollComponent() {
@@ -193,7 +193,7 @@ function ScrollComponent() {
 ### Custom Hook with Debounced Callback
 
 ```tsx
-import { useDebounceCallback } from 'useful-hooks';
+import { useDebounceCallback } from 'usely';
 import { useState, useEffect } from 'react';
 
 function useDebouncedSearch(delay = 300) {
@@ -257,7 +257,7 @@ function AdvancedSearch() {
 ### Multiple Debounced Callbacks
 
 ```tsx
-import { useDebounceCallback } from 'useful-hooks';
+import { useDebounceCallback } from 'usely';
 import { useState, useEffect } from 'react';
 
 function MultiHandlerComponent() {
@@ -297,7 +297,7 @@ function MultiHandlerComponent() {
 ### Conditional Debouncing
 
 ```tsx
-import { useDebounceCallback } from 'useful-hooks';
+import { useDebounceCallback } from 'usely';
 import { useState, useCallback } from 'react';
 
 function ConditionalDebounce() {
@@ -336,7 +336,7 @@ function ConditionalDebounce() {
 ### API Call with Retry
 
 ```tsx
-import { useDebounceCallback } from 'useful-hooks';
+import { useDebounceCallback } from 'usely';
 import { useState } from 'react';
 
 function ApiCallWithRetry() {
@@ -425,8 +425,8 @@ useEffect(() => {
 
 ### 3. Combine with Other Hooks
 ```tsx
-import { useDebounceCallback } from 'useful-hooks';
-import { useLocalStorage } from 'useful-hooks';
+import { useDebounceCallback } from 'usely';
+import { useLocalStorage } from 'usely';
 
 function PersistentSearch() {
   const [searchTerm, setSearchTerm] = useLocalStorage('search', '');

@@ -5,13 +5,13 @@ A hook that persists state in localStorage with automatic serialization/deserial
 ## Installation
 
 ```bash
-npm install useful-hooks
+npm install usely
 ```
 
 ## Usage
 
 ```tsx
-import { useLocalStorage } from 'useful-hooks';
+import { useLocalStorage } from 'usely';
 
 const [value, setValue, removeValue] = useLocalStorage('key', initialValue);
 ```
@@ -34,7 +34,7 @@ const [value, setValue, removeValue] = useLocalStorage('key', initialValue);
 ### Basic Usage
 
 ```tsx
-import { useLocalStorage } from 'useful-hooks';
+import { useLocalStorage } from 'usely';
 
 function UserProfile() {
   const [name, setName, removeName] = useLocalStorage('user-name', 'Guest');
@@ -56,7 +56,7 @@ function UserProfile() {
 ### Complex Objects
 
 ```tsx
-import { useLocalStorage } from 'useful-hooks';
+import { useLocalStorage } from 'usely';
 
 function Settings() {
   const [settings, setSettings] = useLocalStorage('app-settings', {
@@ -83,7 +83,7 @@ function Settings() {
 ### Function Updates (like useState)
 
 ```tsx
-import { useLocalStorage } from 'useful-hooks';
+import { useLocalStorage } from 'usely';
 
 function Counter() {
   const [count, setCount] = useLocalStorage('counter', 0);

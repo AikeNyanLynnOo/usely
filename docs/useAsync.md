@@ -5,13 +5,13 @@ A hook that handles async operations with automatic loading, error, and success 
 ## Installation
 
 ```bash
-npm install useful-hooks
+npm install usely
 ```
 
 ## Usage
 
 ```tsx
-import { useAsync } from 'useful-hooks';
+import { useAsync } from 'usely';
 
 const [execute, { data, loading, error, reset }] = useAsync(asyncFunction);
 ```
@@ -40,7 +40,7 @@ const [execute, { data, loading, error, reset }] = useAsync(asyncFunction);
 ### Basic Data Fetching
 
 ```tsx
-import { useAsync } from 'useful-hooks';
+import { useAsync } from 'usely';
 
 function UserProfile({ userId }) {
   const [fetchUser, { data: user, loading, error }] = useAsync(
@@ -71,7 +71,7 @@ function UserProfile({ userId }) {
 ### Immediate Execution
 
 ```tsx
-import { useAsync } from 'useful-hooks';
+import { useAsync } from 'usely';
 
 function AutoFetchingComponent() {
   const [fetchData, { data, loading, error }] = useAsync(
@@ -92,7 +92,7 @@ function AutoFetchingComponent() {
 ### With Success/Error Callbacks
 
 ```tsx
-import { useAsync } from 'useful-hooks';
+import { useAsync } from 'usely';
 
 function FormSubmission() {
   const [submitForm, { loading, error }] = useAsync(
@@ -135,7 +135,7 @@ function FormSubmission() {
 ### Manual Reset
 
 ```tsx
-import { useAsync } from 'useful-hooks';
+import { useAsync } from 'usely';
 
 function ResettableComponent() {
   const [fetchData, { data, loading, error, reset }] = useAsync(
@@ -161,7 +161,7 @@ function ResettableComponent() {
 ### Cancellation Support
 
 ```tsx
-import { useAsync } from 'useful-hooks';
+import { useAsync } from 'usely';
 
 function SearchComponent() {
   const [search, { data, loading, error }] = useAsync(
@@ -197,7 +197,7 @@ function SearchComponent() {
 ### Multiple Async Operations
 
 ```tsx
-import { useAsync } from 'useful-hooks';
+import { useAsync } from 'usely';
 
 function Dashboard() {
   const [fetchUsers, { data: users, loading: usersLoading }] = useAsync(
@@ -238,7 +238,7 @@ function Dashboard() {
 ### Conditional Execution
 
 ```tsx
-import { useAsync } from 'useful-hooks';
+import { useAsync } from 'usely';
 
 function ConditionalFetch({ userId, shouldFetch }) {
   const [fetchUser, { data, loading, error }] = useAsync(
@@ -265,7 +265,7 @@ function ConditionalFetch({ userId, shouldFetch }) {
 ### Error Handling with Retry
 
 ```tsx
-import { useAsync } from 'useful-hooks';
+import { useAsync } from 'usely';
 
 function RetryExample() {
   const [fetchWithRetry, { data, loading, error }] = useAsync(

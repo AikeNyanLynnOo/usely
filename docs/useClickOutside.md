@@ -5,13 +5,13 @@ A hook that detects clicks outside of a specified element. Useful for closing mo
 ## Installation
 
 ```bash
-npm install useful-hooks
+npm install usely
 ```
 
 ## Usage
 
 ```tsx
-import { useClickOutside } from 'useful-hooks';
+import { useClickOutside } from 'usely';
 import { useRef } from 'react';
 
 const ref = useRef();
@@ -35,7 +35,7 @@ useClickOutside(ref, handler);
 ### Basic Modal
 
 ```tsx
-import { useClickOutside } from 'useful-hooks';
+import { useClickOutside } from 'usely';
 import { useRef, useState } from 'react';
 
 function Modal() {
@@ -60,7 +60,7 @@ function Modal() {
 ### Dropdown Menu
 
 ```tsx
-import { useClickOutside } from 'useful-hooks';
+import { useClickOutside } from 'usely';
 import { useRef, useState } from 'react';
 
 function Dropdown() {
@@ -90,7 +90,7 @@ function Dropdown() {
 ### Conditional Listening
 
 ```tsx
-import { useClickOutside } from 'useful-hooks';
+import { useClickOutside } from 'usely';
 import { useRef, useState } from 'react';
 
 function ConditionalExample() {
@@ -127,7 +127,7 @@ function ConditionalExample() {
 The hook automatically handles both mouse and touch events, making it mobile-friendly:
 
 ```tsx
-import { useClickOutside } from 'useful-hooks';
+import { useClickOutside } from 'usely';
 import { useRef, useState } from 'react';
 
 function MobileFriendlyModal() {

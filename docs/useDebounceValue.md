@@ -5,13 +5,13 @@ A hook that debounces a value, updating the debounced value only after a specifi
 ## Installation
 
 ```bash
-npm install useful-hooks
+npm install usely
 ```
 
 ## Usage
 
 ```tsx
-import { useDebounceValue } from 'useful-hooks';
+import { useDebounceValue } from 'usely';
 
 const [debouncedValue, setValue] = useDebounceValue(initialValue, delay);
 ```
@@ -33,7 +33,7 @@ const [debouncedValue, setValue] = useDebounceValue(initialValue, delay);
 ### Search Input
 
 ```tsx
-import { useDebounceValue } from 'useful-hooks';
+import { useDebounceValue } from 'usely';
 import { useState, useEffect } from 'react';
 
 function SearchComponent() {
@@ -69,7 +69,7 @@ function SearchComponent() {
 ### API Call Debouncing
 
 ```tsx
-import { useDebounceValue } from 'useful-hooks';
+import { useDebounceValue } from 'usely';
 import { useState, useEffect } from 'react';
 
 function UserSearch() {
@@ -114,7 +114,7 @@ function UserSearch() {
 ### Form Validation
 
 ```tsx
-import { useDebounceValue } from 'useful-hooks';
+import { useDebounceValue } from 'usely';
 import { useState, useEffect } from 'react';
 
 function EmailValidation() {
@@ -158,7 +158,7 @@ function EmailValidation() {
 ### Window Resize Handler
 
 ```tsx
-import { useDebounceValue } from 'useful-hooks';
+import { useDebounceValue } from 'usely';
 import { useState, useEffect } from 'react';
 
 function ResponsiveComponent() {
@@ -199,7 +199,7 @@ function ResponsiveComponent() {
 ### Custom Delay Hook
 
 ```tsx
-import { useDebounceValue } from 'useful-hooks';
+import { useDebounceValue } from 'usely';
 import { useState } from 'react';
 
 function useSearchDebounce(initialValue = '', delay = 300) {
@@ -238,7 +238,7 @@ function AdvancedSearch() {
 ### Multiple Debounced Values
 
 ```tsx
-import { useDebounceValue } from 'useful-hooks';
+import { useDebounceValue } from 'usely';
 import { useState, useEffect } from 'react';
 
 function MultiSearch() {
@@ -360,8 +360,8 @@ setDebouncedValue(value);
 
 ### 4. Combine with Other Hooks
 ```tsx
-import { useDebounceValue } from 'useful-hooks';
-import { useLocalStorage } from 'useful-hooks';
+import { useDebounceValue } from 'usely';
+import { useLocalStorage } from 'usely';
 
 function PersistentSearch() {
   const [searchTerm, setSearchTerm] = useLocalStorage('search-term', '');

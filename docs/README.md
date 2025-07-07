@@ -1,11 +1,11 @@
-# Useful Hooks Documentation
+# Usely Hooks Documentation
 
 A collection of essential React hooks for common use cases. This library provides hooks that are frequently needed but not always available in popular packages.
 
 ## Installation
 
 ```bash
-npm install useful-hooks
+npm install usely
 ```
 
 ## Available Hooks
@@ -18,6 +18,7 @@ npm install useful-hooks
 ### DOM & Events
 - [useEventListenerRef](./useEventListenerRef.md) - Attach event listeners via ref
 - [useClickOutside](./useClickOutside.md) - Detect clicks outside an element
+- [useVisibilityObserver](./useVisibilityObserver.md) - Detect if an element is visible in the viewport
 
 ### Async Operations
 - [useAsync](./useAsync.md) - Handle async operations with loading/error states
@@ -25,7 +26,7 @@ npm install useful-hooks
 ## Quick Start
 
 ```tsx
-import { useLocalStorage, useClickOutside, useAsync } from 'useful-hooks';
+import { useLocalStorage, useClickOutside, useAsync, useVisibilityObserver } from 'usely';
 
 // Persist user preferences
 const [theme, setTheme] = useLocalStorage('theme', 'light');

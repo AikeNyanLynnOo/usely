@@ -5,13 +5,13 @@ A hook that attaches an event listener to a DOM element via ref, handling cleanu
 ## Installation
 
 ```bash
-npm install useful-hooks
+npm install usely
 ```
 
 ## Usage
 
 ```tsx
-import { useEventListenerRef } from 'useful-hooks';
+import { useEventListenerRef } from 'usely';
 
 const ref = useEventListenerRef('click', handler);
 ```
@@ -33,7 +33,7 @@ const ref = useEventListenerRef('click', handler);
 ### Basic Click Handler
 
 ```tsx
-import { useEventListenerRef } from 'useful-hooks';
+import { useEventListenerRef } from 'usely';
 import { useState } from 'react';
 
 function ClickCounter() {
@@ -55,7 +55,7 @@ function ClickCounter() {
 ### Keyboard Event Handler
 
 ```tsx
-import { useEventListenerRef } from 'useful-hooks';
+import { useEventListenerRef } from 'usely';
 import { useState } from 'react';
 
 function KeyboardHandler() {
@@ -81,7 +81,7 @@ function KeyboardHandler() {
 ### Scroll Event Handler
 
 ```tsx
-import { useEventListenerRef } from 'useful-hooks';
+import { useEventListenerRef } from 'usely';
 import { useState, useEffect } from 'react';
 
 function ScrollTracker() {
@@ -113,7 +113,7 @@ function ScrollTracker() {
 ### Form Input Handler
 
 ```tsx
-import { useEventListenerRef } from 'useful-hooks';
+import { useEventListenerRef } from 'usely';
 import { useState } from 'react';
 
 function FormInput() {
@@ -145,7 +145,7 @@ function FormInput() {
 ### Mouse Event Handler
 
 ```tsx
-import { useEventListenerRef } from 'useful-hooks';
+import { useEventListenerRef } from 'usely';
 import { useState } from 'react';
 
 function MouseTracker() {
@@ -191,7 +191,7 @@ function MouseTracker() {
 ### Multiple Event Handlers
 
 ```tsx
-import { useEventListenerRef } from 'useful-hooks';
+import { useEventListenerRef } from 'usely';
 import { useState } from 'react';
 
 function MultiEventHandler() {
@@ -233,7 +233,7 @@ function MultiEventHandler() {
 ### Conditional Event Handling
 
 ```tsx
-import { useEventListenerRef } from 'useful-hooks';
+import { useEventListenerRef } from 'usely';
 import { useState, useCallback } from 'react';
 
 function ConditionalHandler() {
@@ -269,7 +269,7 @@ function ConditionalHandler() {
 ### Custom Event Options
 
 ```tsx
-import { useEventListenerRef } from 'useful-hooks';
+import { useEventListenerRef } from 'usely';
 import { useState } from 'react';
 
 function CustomOptions() {
@@ -298,7 +298,7 @@ function CustomOptions() {
 ### Dynamic Event Handling
 
 ```tsx
-import { useEventListenerRef } from 'useful-hooks';
+import { useEventListenerRef } from 'usely';
 import { useState, useEffect } from 'react';
 
 function DynamicHandler() {
@@ -333,7 +333,7 @@ function DynamicHandler() {
 ### Form Validation with Multiple Events
 
 ```tsx
-import { useEventListenerRef } from 'useful-hooks';
+import { useEventListenerRef } from 'usely';
 import { useState } from 'react';
 
 function ValidatedForm() {
@@ -445,8 +445,8 @@ const formRef = useEventListenerRef('submit', handleSubmit);
 
 ### 4. Combine with Other Hooks
 ```tsx
-import { useEventListenerRef } from 'useful-hooks';
-import { useLocalStorage } from 'useful-hooks';
+import { useEventListenerRef } from 'usely';
+import { useLocalStorage } from 'usely';
 
 function PersistentForm() {
   const [value, setValue] = useLocalStorage('form-value', '');
