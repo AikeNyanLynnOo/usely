@@ -1,6 +1,6 @@
 {
   "name": "usely",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "an own library of reusable react hooks",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
